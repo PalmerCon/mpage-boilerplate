@@ -1,6 +1,6 @@
-# Northern Health Hospital Custom MPage Boilerplate
+# Custom MPage Boilerplate
 
-This project is a boilerplate for creating a custom MPage in Cerner PowerChart using Bootstrap and Vite. It is designed to streamline the development process for Northern Health Hospital.
+This project is a boilerplate for creating a custom MPage in Cerner PowerChart using Bootstrap and Vite. 
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ To build the project for production, run:
 npm run build
 ```
 
-After building the project, the static files will be created in the `dist` directory. These files should be copied to the `custom_mpage_content/custom-mpage` directory in the `M://` drive.
+After building the project, the static files will be created in the `dist` directory. These files should be copied to the `custom_mpage_content/custom-mpage` directory in the `M://` drive. If you are developing on your local machine, zip the whole `dist` directory, email it to your work email address, download it on your work computer, and copy the files to the `M://` drive.
 
 
 ## Configuration
@@ -56,4 +56,4 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For more information, please contact the project maintainers at [email@example.com](mailto:email@example.com).
+For more information, please contact the project maintainers at [connor.palmer@austin.org.au](mailto:connor.palmer@austin.org.au).
