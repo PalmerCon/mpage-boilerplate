@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-padding">
+        <div class="container-fluid">
+          <a class="navbar-brand navbar-brand-margin nav-header" href="#">Patient Information</a>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item nav-item-margin">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown nav-item-margin">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Demographics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">General</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                  <li><a class="dropdown-item" href="#">Address</a></li>
+                  <li><a class="dropdown-item" href="#">Other names</a></li>
+                  <li><a class="dropdown-item" href="#">Other identifiers</a></li>
+                </ul>
+              </li>
+              <li class="nav-item nav-item-margin">
+                <a class="nav-link" href="#">Medical Treatment Decision Maker (MTDM)</a>
+              </li>
+              <li class="nav-item nav-item-margin">
+                <a class="nav-link" href="#">Visit List</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container container-padding">
+       
+        <h1>Welcome to a custom MPages application</h1>
+        <h3>This application is built with <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Bootstrap 5</a>, and <a href="https://vitejs.dev/" target="_blank">Vite</a>!</h3>
+
+        
+        <p>Use the bootstrap docs to learn how to use the components and styles. <a href="https://getbootstrap.com/docs/5.0/components/" target="_blank">Bootstrap 5 Docs</a></p>
+
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch modal
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Something about the patient</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <p>Some details about the patient that you might want to display in a modal.</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Accept</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Launch offcanvas
+          </button>
+          
+            <!-- Offcanvas -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some details about the patient that you might want to display in an offcanvas.
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="card card-margin">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Patient Information</h5>
+                    <button class="btn btn-primary" id="refresh" onclick="getPatientDetailsAndInsertIntoDom()">
+                        Refresh
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="card-body">
+                <pre><code class="card-text" id="data">Loading...</p>
+
+                </code></pre>
+  
+                
+          </div>
+         </div>
+
+        
+        
+    </div>
+
+    
+      
+
+    
+
+
+
+  </body>
+</html>
