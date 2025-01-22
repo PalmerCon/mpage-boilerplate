@@ -56,4 +56,4 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For more information, please contact the project maintainers at [connor.palmer@austin.org.au](mailto:connor.palmer@austin.org.au).
+For more information, please contact Connor at [connor.palmer@austin.org.au](mailto:connor.palmer@austin.org.au).
