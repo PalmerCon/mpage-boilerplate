@@ -38,8 +38,9 @@ To build the project for production, run:
 npm run build
 ```
 
-After building the project, the static files will be created in the `dist` directory. These files should be copied to the `custom_mpage_content/custom-mpage` directory in the `M://` drive. If you are developing on your local machine, zip the whole `dist` directory, email it to your work email address, download it on your work computer, and copy the files to the `M://` drive.
+After building the project, the static files will be created in the `dist` directory. These files should be copied to the `custom_mpage_content/custom-mpage` directory in the `M://` drive. If you are developing on your local machine, zip the whole `dist` directory, email it to your work email address, download it on your work computer, and copy the files to the `M://` drive. Refresh the static content server in PowerChart to see the changes.
 
+This boilerplate calls a CCL script that you will need to create called `ahs_cust_mpage_boilerplate`. Copy this file into your Cerner environment and compile it.
 
 ## Configuration
 

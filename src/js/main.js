@@ -37,7 +37,7 @@ async function getPatientDetails(personId) {
 
 async function getPatientDetailsAndInsertIntoDom() {
     const urlParams = new URLSearchParams(window.location.search);
-    const personId = urlParams.get('uId');
+    const personId = urlParams.get('pId');
     console.log('personId:', personId);
     console.log('getting patient details for personId:', personId);
     document.getElementById('data').innerText = 'Loading...';
