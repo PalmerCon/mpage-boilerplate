@@ -17,7 +17,7 @@ This project is a boilerplate for creating a custom MPage in Cerner PowerChart u
     ```
 2. Navigate to the project directory:
     ```sh
-    cd nh-custom-mpage
+    cd mpage-boilerplate
     ```
 3. Install the dependencies:
     ```sh
